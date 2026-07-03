@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --theme-pink-50: #fdf2f8;
+  --theme-pink-100: #fce7f3;
+  --theme-pink-200: #fbcfe8;
+  --theme-pink-300: #f9a8d4;
+  --theme-pink-400: #f472b6;
+  --theme-pink-500: #ec4899;
+  --theme-pink-600: #db2777;
+  --theme-pink-700: #be185d;
+  --theme-pink-800: #9d174d;
+  --theme-pink-900: #831843;
+  --theme-pink-950: #500724;
+
+  --theme-rose-50: #fff1f2;
+  --theme-rose-100: #ffe4e6;
+  --theme-rose-200: #fecdd3;
+  --theme-rose-300: #fda4af;
+  --theme-rose-400: #fb7185;
+  --theme-rose-500: #f43f5e;
+  --theme-rose-600: #e11d48;
+  --theme-rose-700: #be123c;
+  --theme-rose-800: #9f1239;
+  --theme-rose-900: #881337;
+  --theme-rose-950: #4c0519;
+}
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Dynamically map pink to active theme variables */
+  --color-pink-50: var(--theme-pink-50);
+  --color-pink-100: var(--theme-pink-100);
+  --color-pink-200: var(--theme-pink-200);
+  --color-pink-300: var(--theme-pink-300);
+  --color-pink-400: var(--theme-pink-400);
+  --color-pink-500: var(--theme-pink-500);
+  --color-pink-600: var(--theme-pink-600);
+  --color-pink-700: var(--theme-pink-700);
+  --color-pink-800: var(--theme-pink-800);
+  --color-pink-900: var(--theme-pink-900);
+  --color-pink-950: var(--theme-pink-950);
+
+  /* Dynamically map rose to active theme variables */
+  --color-rose-50: var(--theme-rose-50);
+  --color-rose-100: var(--theme-rose-100);
+  --color-rose-200: var(--theme-rose-200);
+  --color-rose-300: var(--theme-rose-300);
+  --color-rose-400: var(--theme-rose-400);
+  --color-rose-500: var(--theme-rose-500);
+  --color-rose-600: var(--theme-rose-600);
+  --color-rose-700: var(--theme-rose-700);
+  --color-rose-800: var(--theme-rose-800);
+  --color-rose-900: var(--theme-rose-900);
+  --color-rose-950: var(--theme-rose-950);
+}
+
+/* Custom Font classes for Personalization */
+.font-poppins {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif !important;
+}
+
+.font-jakarta {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+.font-mono-jb {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* Custom animation for modal transitions */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Giya Inventory App",
+  "description": "Aplikasi manajemen inventaris aksesoris Giya SKU premium dengan perpaduan warna pink elegan, fitur forecasting, supplier, dan sinkronisasi Google Sheets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
